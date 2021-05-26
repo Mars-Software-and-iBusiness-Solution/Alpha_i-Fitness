@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gym_posters"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="184dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="1dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/gym_shark"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="275dp"
+                android:layout_height="50dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                app:counterEnabled="true"
+                app:startIconDrawable="@drawable/ic_email"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Text1"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="User Name / Email"
+                    android:drawableStart="@drawable/ic_email"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:ems="10"
+                    app:hintTextColor="#030908"
+
+                    android:background="#F8F8F8"
+                    android:textColor="#000000"
+                    android:gravity="left|center"
+                    android:hint="User Name / Email"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                app:counterEnabled="true"
+                app:counterMaxLength="9"
+                app:startIconDrawable="@drawable/ic_lock"
+                app:errorEnabled="true"
+                app:hintTextColor="#030908"
+
+                app:passwordToggleEnabled="true">
+
+
+       <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Text2"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:autofillHints="Password"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:ems="10"
+                    app:hintTextColor="#030908"
+                    android:textStyle="bold"
+
+                    android:background="#F8F8F8"
+                    android:textColor="#000000"
+                    android:textSize="19dp"
+
+                    android:gravity="left|center"
+                    android:hint="Password"
+
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:background="@drawable/button_background5"
+                android:onClick="confirmInput"
+                android:textSize="19dp"
+
+                android:text="Login" />
+
+
+            <LinearLayout
+                android:layout_width="275dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/Text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="(Register)"
+                    android:background="@drawable/button_background1"
+
+                    android:textColor="#0C0B0B"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/Text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:shadowColor="#FFFFFF"
+                    android:text="(Forgot Password)"
+                    android:background="@drawable/button_background1"
+
+                    android:textColor="#0B0A0A"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="550dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/progressBar1"
+            android:layout_marginTop="90dp"
+            android:text="Alpha Fitness X 2020" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "590056679852",
+    "firebase_url": "https://alpha-i-fitness.firebaseio.com",
+    "project_id": "alpha-i-fitness",
+    "storage_bucket": "alpha-i-fitness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590056679852:android:f6abae62b69a561497b209",
+        "android_client_info": {
+          "package_name": "com.mars.itech.alphai_fitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590056679852-svu5ro9igu1778tmne183j9p6aufmduf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4LOUMlfufDdrMFoqYtY15GYK8dzNg7iE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590056679852-svu5ro9igu1778tmne183j9p6aufmduf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
